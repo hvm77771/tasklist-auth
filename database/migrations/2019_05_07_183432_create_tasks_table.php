@@ -17,7 +17,7 @@ class CreateTasksTable extends Migration
             $table->increments('id');
             $table->integer('user_id')->unsigned()->index();
             $table->string('content');    // content カラム追加
-            $table->string('status');    // content カラム追加
+            $table->string('status',10);    // content カラム追加
             $table->timestamps();
             
         });
