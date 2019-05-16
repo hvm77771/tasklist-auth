@@ -20,6 +20,8 @@ class CreateTasksTable extends Migration
             $table->string('status',10);    // content カラム追加
             $table->timestamps();
             
+            $table->foreign('user_id')->references('id')->on('users');
+
         });
     }
 
