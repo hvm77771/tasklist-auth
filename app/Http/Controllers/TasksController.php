@@ -122,5 +122,6 @@ class TasksController extends Controller
         $task->delete();
         }
         return redirect('/tasks');
+
     }
 }
